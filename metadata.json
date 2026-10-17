@@ -1,0 +1,6 @@
+{
+  "name": "RyHar Portfolio & Admin CMS",
+  "description": "Portofolio modern minimalis responsif terinspirasi dari RyHar, dilengkapi dark/light mode, timeline pengalaman, showcase project, AI assistant interaktif, dan Admin CMS Dashboard dengan akses link khusus.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
