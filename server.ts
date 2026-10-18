@@ -46,27 +46,27 @@ async function startServer() {
       // Default knowledge context about RyHar
       const contextPrompt = portfolioContext || `
 Profil Pemilik Portofolio:
-- Nama: Ahmad Rizki Hartawan (RyHar / Rizki)
-- Role: Fullstack Web Developer & Bot Specialist
+- Nama:  Sabian Fadli Kusuma (Sabin/YansXiters
+- Role: Frontend Web Developer & Bot Specialist
 - Pengalaman: 2+ tahun di bidang web development
-- Bahasa Utama: JavaScript & TypeScript
-- Lokasi: Palembang, Indonesia
-- Pendidikan: Universitas Multi Data Palembang (GPA 3.84)
-- Kontak: ryharofficial@gmail.com, +62 895-0818-8642
+- Bahasa Utama: Javascript dan Typescript
+- Lokasi: Suralarta, Indonesia
+- Pendidikan: SMK Negeri 2 Surakarta
+- Kontak: iyannrealcs@gmail.com, +62 896-1637-4060
 - Tech Stack Frontend: React, Next.js, Tailwind CSS, TypeScript
 - Tech Stack Backend: Node.js, Express.js, MySQL, MongoDB, Prisma
 - Project Unggulan:
-  1. Ryhar Panel - Platform web untuk menjual panel hosting dengan sistem dashboard terpisah admin & user, analitik, pengaturan sistem, dan integrasi payment gateway.
-  2. Ryhar API - Platform Rest API yang menyediakan berbagai endpoint gratis dan mudah digunakan untuk developer, lengkap dengan dokumentasi jelas.
+  1. Gold Analisis - Platform web untuk menganalisis pasar emas
+  2. Xiters Tools - Platform web tools yang menyediakan banyak tools secara gratis.
   3. Elaina Bot (WhatsApp) - Multifunctional WhatsApp bot dengan berbagai fitur menarik seperti games, tools, automation, dan integrasi API interaktif.
 `;
 
-      const systemInstruction = `Anda adalah "RyHar Assistant", asisten AI resmi yang cerdas, ramah, dan profesional untuk portofolio Ahmad Rizki Hartawan (RyHar).
+      const systemInstruction = `Anda adalah "Yans Assistant", asisten AI resmi yang cerdas, ramah, dan profesional untuk portofolio Ahmad Rizki Hartawan (RyHar).
 Gaya bicara: Ramah, santun, berbahasa Indonesia natural, profesional, ringkas, dan to the point.
 Tugas Anda:
 1. Menjawab pertanyaan pengunjung seputar portofolio, latar belakang pendidikan, keahlian teknis (tech stack), pengalaman kerja, dan proyek-proyek RyHar.
-2. Jika ditanya "kamu siapa?", perkenalkan diri persis atau serupa dengan: "Saya RyHar Assistant, asisten AI pribadi untuk Ahmad Rizki Hartawan, seorang Fullstack Web Developer. Saya siap membantu Anda dengan informasi tentang portofolio, layanan, atau proyek yang ia kerjakan."
-3. Jika ditanya kontak atau cara menghubungi, berikan email ryharofficial@gmail.com atau nomor WhatsApp / form kontak di web.
+2. Jika ditanya "kamu siapa?", perkenalkan diri persis atau serupa dengan: "Saya Yans Assistant, asisten AI pribadi untuk Ahmad Rizki Hartawan, seorang Fullstack Web Developer. Saya siap membantu Anda dengan informasi tentang portofolio, layanan, atau proyek yang ia kerjakan."
+3. Jika ditanya kontak atau cara menghubungi, berikan email iyannrealcs@gmail.com atau nomor WhatsApp / form kontak di web.
 4. Gunakan informasi dari konteks berikut:
 ${contextPrompt}
 `;
@@ -109,17 +109,17 @@ ${contextPrompt}
       let fallback = '';
 
       if (lower.includes('siapa') || lower.includes('kamu siapa') || lower.includes('kenalan')) {
-        fallback = 'Saya RyHar Assistant, asisten AI pribadi untuk Ahmad Rizki Hartawan, seorang Fullstack Web Developer. Saya siap membantu Anda dengan informasi tentang portofolio, layanan, atau proyek yang ia kerjakan.';
+        fallback = 'Saya Yans Assistant, asisten AI pribadi untuk Sabian Fadli Kusuma, seorang Frontend Web Developer. Saya siap membantu Anda dengan informasi tentang portofolio, layanan, atau proyek yang ia kerjakan.';
       } else if (lower.includes('project') || lower.includes('proyek') || lower.includes('karya')) {
-        fallback = 'RyHar telah mengerjakan berbagai proyek unggulan seperti Ryhar Panel (platform manajemen & hosting dengan payment gateway), Ryhar API (layanan REST API publik), dan Elaina Bot (WhatsApp multifunctional bot). Anda juga dapat melihat detail lengkapnya di bagian Selected Works!';
+        fallback = 'YansXiters telah mengerjakan berbagai proyek unggulan seperti Gold Analisis (platform Platform web untuk menganalisis pasar emas), Xiters Tools (Platform web tools yang menyediakan banyak tools gratis.), dan Elaina Bot (WhatsApp multifunctional bot). Anda juga dapat melihat detail lengkapnya di bagian Selected Works!';
       } else if (lower.includes('skill') || lower.includes('tech') || lower.includes('stack') || lower.includes('kemampuan')) {
-        fallback = 'Tech stack utama RyHar berfokus pada JavaScript/TypeScript ecosystem. Di sisi frontend menggunakan React, Next.js, dan Tailwind CSS. Di sisi backend menguasai Node.js, Express.js, MySQL, MongoDB, serta integrasi API.';
+        fallback = 'Tech stack utama Yans berfokus pada JavaScript/TypeScript ecosystem. Di sisi frontend menggunakan React, Next.js, dan Tailwind CSS. Di sisi backend menguasai Node.js, Express.js, MySQL, MongoDB, serta integrasi API.';
       } else if (lower.includes('kontak') || lower.includes('hubungi') || lower.includes('hire') || lower.includes('email') || lower.includes('wa')) {
-        fallback = 'Anda bisa langsung mengirimkan pesan melalui formulir "Contact Me" di bawah, atau menghubungi langsung via email ryharofficial@gmail.com dan WhatsApp +62 895-0818-8642.';
+        fallback = 'Anda bisa langsung mengirimkan pesan melalui formulir "Contact Me" di bawah, atau menghubungi langsung via email iyannrealcs@gmail.com dan WhatsApp +62 896-1637-4060.';
       } else if (lower.includes('pengalaman') || lower.includes('experience') || lower.includes('karir')) {
-        fallback = 'Rizki memiliki pengalaman lebih dari 2 tahun sebagai Fullstack Developer & Bot Developer, mengembangkan berbagai aplikasi SaaS, bot otomasi pesan, serta API publik berkinerja tinggi.';
+        fallback = 'Sabian memiliki pengalaman lebih dari 2 tahun sebagai Frontend Developer & Bot Developer, mengembangkan berbagai aplikasi SaaS, bot otomasi pesan, serta API publik berkinerja tinggi.';
       } else {
-        fallback = `Terima kasih telah bertanya! RyHar adalah seorang Fullstack Web Developer yang berfokus menciptakan web modern, cepat, dan fungsional. Ada hal spesifik tentang project atau skill yang ingin Anda ketahui?`;
+        fallback = `Terima kasih telah bertanya! YansXiters adalah seorang Frontend Web Developer yang berfokus menciptakan web modern, cepat, dan fungsional. Ada hal spesifik tentang project atau skill yang ingin Anda ketahui?`;
       }
 
       return res.json({ reply: fallback });
@@ -127,7 +127,7 @@ ${contextPrompt}
       console.error('Error in /api/assistant:', err);
       return res.status(500).json({
         error: 'Terjadi kendala pada asisten AI',
-        fallback: 'Saya RyHar Assistant. Silakan tanyakan hal lain terkait portofolio atau hubungi Rizki langsung!',
+        fallback: 'Saya Yans Assistant. Silakan tanyakan hal lain terkait portofolio atau hubungi Sabian langsung!',
       });
     }
   });
