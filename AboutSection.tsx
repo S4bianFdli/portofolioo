@@ -50,7 +50,7 @@ export const AboutSection: React.FC = () => {
               {/* Glowing badge tag at card bottom */}
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/10 dark:bg-neutral-900/40 backdrop-blur-md border border-white/20 dark:border-white/10 text-white">
                 <span className="text-xs tracking-wider text-neutral-300 uppercase block font-semibold mb-0.5">
-                  Fullstack Web Developer
+                  Frontend Web Developer
                 </span>
                 <span className="text-lg font-bold">{about.personalDetails.name}</span>
               </div>
