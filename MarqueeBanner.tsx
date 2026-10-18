@@ -7,7 +7,7 @@ export const MarqueeBanner: React.FC = () => {
 
   const items = [
     `I'm ${name}`,
-    'Fullstack Web Developer',
+    'Frontend Web Developer',
     'Creative Technologist',
     'Bot Developer',
     'Clean Architecture',
