@@ -3,7 +3,7 @@ import { usePortfolio } from './PortfolioContext';
 
 export const MarqueeBanner: React.FC = () => {
   const { data } = usePortfolio();
-  const name = data.profile.name === 'Rizki' ? 'RyHar' : data.profile.name;
+  const name = data.profile.name === 'Sabian' ? 'YansXiters' : data.profile.name;
 
   const items = [
     `I'm ${name}`,
