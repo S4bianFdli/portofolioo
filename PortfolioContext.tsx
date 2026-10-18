@@ -24,10 +24,10 @@ interface PortfolioContextType {
   secretUrl: string;
 }
 
-const STORAGE_KEY = 'ryhar_portfolio_data_v1';
-const MESSAGES_KEY = 'ryhar_portfolio_messages_v1';
-const ADMIN_AUTH_KEY = 'ryhar_admin_authenticated';
-const THEME_KEY = 'ryhar_portfolio_theme';
+const STORAGE_KEY = 'yans_portfolio_data_v1';
+const MESSAGES_KEY = 'yans_portfolio_messages_v1';
+const ADMIN_AUTH_KEY = 'yans_admin_authenticated';
+const THEME_KEY = 'yans_portfolio_theme';
 
 const PortfolioContext = createContext<PortfolioContextType | undefined>(undefined);
 
@@ -76,7 +76,7 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
         id: 'msg-demo-1',
         name: 'Sarah Client',
         email: 'sarah@techstudio.com',
-        message: 'Halo Rizki! Kami tertarik untuk mendiskusikan pembuatan platform SaaS baru untuk tim kami. Apakah kamu available untuk freelance project bulan ini?',
+        message: 'Halo Sabian! Kami tertarik untuk mendiskusikan pembuatan platform SaaS baru untuk tim kami. Apakah kamu available untuk freelance project bulan ini?',
         date: new Date(Date.now() - 3600000 * 24).toISOString(),
         read: false
       }
