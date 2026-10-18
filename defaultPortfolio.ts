@@ -2,7 +2,7 @@ import { PortfolioData } from './portfolio';
 
 export const defaultPortfolioData: PortfolioData = {
   profile: {
-    name: 'Rizki',
+    name: 'Sabian',
     greeting: "Hi, I'm",
     titles: [
       'Frontend Developer',
@@ -16,26 +16,26 @@ export const defaultPortfolioData: PortfolioData = {
     badges: [
       { id: 'b1', icon: 'clock', text: '2+ Years of Experience' },
       { id: 'b2', icon: 'code', text: 'Javascript Main Language' },
-      { id: 'b3', icon: 'terminal', text: 'Fullstack developer' }
+      { id: 'b3', icon: 'terminal', text: 'Frontend developer' }
     ],
     socialLinks: {
-      instagram: 'https://instagram.com/ryhar.123',
-      github: 'https://github.com/ryhar',
-      linkedin: 'https://linkedin.com/in/ahmad-rizki-hartawan',
-      twitter: 'https://twitter.com/ryhar_dev',
-      email: 'ryharofficial@gmail.com'
+      instagram: 'https://instagram.com/sabianfadlikusuma',
+      github: 'https://github.com/S4bianFdli',
+      linkedin: 'https://linkedin.com/',
+      twitter: 'https://twitter.com/',
+      email: 'iyannrealcs@gmail.com'
     }
   },
   about: {
     whoAmI: 'Saya seorang web developer yang berfokus pada menciptakan tampilan dan pengalaman pengguna yang sederhana, cepat, dan fungsional.',
     myApproach: 'Saya mengutamakan clean code, desain responsif, dan pengalaman pengguna yang intuitif dalam setiap proyek yang saya kerjakan.',
     personalDetails: {
-      name: 'Ahmad Rizki Hartawan',
-      placeOfBirth: 'Palembang, Indonesia',
-      phone: '+62 895-0818-8642',
-      gpa: '3.84',
-      email: 'ryharofficial@gmail.com',
-      education: 'Universitas Multi Data Palembang'
+      name: 'Sabian Fadli Kusuma',
+      placeOfBirth: 'Surakarta, Indonesia',
+      phone: '+62 896-1637-4060',
+      gpa: '',
+      email: 'iyannrealcs@gmail.com',
+      education: 'SMK Negeri 2 Surakarta'
     }
   },
   experiences: [
@@ -142,16 +142,16 @@ export const defaultPortfolioData: PortfolioData = {
     }
   ],
   seo: {
-    metaTitle: 'Ahmad Rizki Hartawan (RyHar) – Fullstack Web Developer',
-    metaDescription: 'Portofolio Ahmad Rizki Hartawan (RyHar), Fullstack Web Developer & Bot Specialist berfokus pada React, Next.js, Node.js, Express, dan solusi web modern.',
-    keywords: 'Ahmad Rizki Hartawan, RyHar, Portfolio, Fullstack Developer, Web Developer, Frontend Developer, React, Next.js, Node.js, Palembang, Indonesia',
+    metaTitle: 'Sabian Fadli Kusuma (YansXiters) – Frontend Web Developer',
+    metaDescription: 'Portofolio Sabian Fadli Kusuma, Frontend Web Developer & Bot Specialist berfokus pada React, Next.js, Node.js, Express, dan solusi web modern.',
+    keywords: 'Sabian Fadli Kusuma, YansXiters, Portfolio, Frontend Developer, Web Developer, React, Next.js, Node.js, Surakarta, Indonesia',
     ogImage: '/profil.jpg',
-    author: 'Ahmad Rizki Hartawan',
+    author: 'Sabian Fadli Kusuma',
     canonicalUrl: ''
   },
   adminSettings: {
     secretSlug: 'admin',
-    pinCode: 'admin123',
+    pinCode: 'yans3333',
     enablePin: true
   }
 };
