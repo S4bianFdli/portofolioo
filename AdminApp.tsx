@@ -31,10 +31,10 @@ import {
 import { defaultPortfolioData } from './defaultPortfolio';
 import { PortfolioData, ContactMessage, ExperienceItem, ProjectItem } from './portfolio';
 
-const STORAGE_KEY = 'ryhar_portfolio_data_v1';
-const MESSAGES_KEY = 'ryhar_portfolio_messages_v1';
-const ADMIN_AUTH_KEY = 'ryhar_admin_standalone_auth';
-const THEME_KEY = 'ryhar_portfolio_theme';
+const STORAGE_KEY = 'yans_portfolio_data_v1';
+const MESSAGES_KEY = 'yans_portfolio_messages_v1';
+const ADMIN_AUTH_KEY = 'yans_admin_standalone_auth';
+const THEME_KEY = 'yans_portfolio_theme';
 
 export const AdminApp: React.FC = () => {
   // Theme state
