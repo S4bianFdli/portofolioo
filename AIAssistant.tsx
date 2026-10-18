@@ -59,7 +59,7 @@ export const AIAssistant: React.FC = () => {
     try {
       const portfolioContext = `
 Nama: ${data.about.personalDetails.name} (${data.profile.name})
-Role: Fullstack Web Developer & Bot Specialist
+Role: Frontend Web Developer & Bot Specialist
 Bio: ${data.profile.bio}
 Who Am I: ${data.about.whoAmI}
 My Approach: ${data.about.myApproach}
