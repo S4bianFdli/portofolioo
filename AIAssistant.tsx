@@ -19,7 +19,7 @@ export const AIAssistant: React.FC = () => {
     {
       id: 'msg-init',
       sender: 'ai',
-      text: 'Halo! Saya adalah asisten AI RyHar. Ada yang bisa saya bantu terkait portfolio, pengalaman, atau project RyHar?',
+      text: 'Halo! Saya adalah asisten AI YansXiters. Ada yang bisa saya bantu terkait portfolio, pengalaman, atau project RyHar?',
       time: '13:41',
     },
   ]);
@@ -110,15 +110,15 @@ ${data.projects.map((p) => `- ${p.title} (${p.category}): ${p.shortDescription} 
         const q = textToSend.toLowerCase();
 
         if (q.includes('kamu siapa') || q.includes('siapa kamu') || q.includes('siapa')) {
-          fallbackText = `Saya RyHar Assistant, asisten AI pribadi untuk ${data.about.personalDetails.name}, seorang Fullstack Web Developer. Saya siap membantu Anda dengan informasi tentang portofolio, layanan, atau proyek yang ia kerjakan.`;
+          fallbackText = `Saya Yans Assistant, asisten AI pribadi untuk ${data.about.personalDetails.name}, seorang Frontend Web Developer. Saya siap membantu Anda dengan informasi tentang portofolio, layanan, atau proyek yang ia kerjakan.`;
         } else if (q.includes('project') || q.includes('proyek') || q.includes('karya')) {
-          fallbackText = `Rizki telah membuat sejumlah proyek inovatif seperti ${data.projects.map((p) => p.title).join(', ')}. Anda dapat meninjau detail dan demo langsungnya di bagian Selected Works!`;
+          fallbackText = `Sabian telah membuat sejumlah proyek inovatif seperti ${data.projects.map((p) => p.title).join(', ')}. Anda dapat meninjau detail dan demo langsungnya di bagian Selected Works!`;
         } else if (q.includes('tech') || q.includes('stack') || q.includes('skill')) {
-          fallbackText = `Rizki berfokus pada ekosistem modern: React, Next.js, TypeScript, Tailwind CSS di frontend; serta Node.js, Express, MySQL, dan MongoDB di backend.`;
+          fallbackText = `Sabian berfokus pada ekosistem modern: React, Next.js, TypeScript, Tailwind CSS di Frontend.`;
         } else if (q.includes('kontak') || q.includes('hubungi') || q.includes('email') || q.includes('wa')) {
-          fallbackText = `Anda bisa menghubungi Rizki langsung lewat email ${data.about.personalDetails.email} atau WhatsApp ${data.about.personalDetails.phone}.`;
+          fallbackText = `Anda bisa menghubungi Sabian langsung lewat email ${data.about.personalDetails.email} atau WhatsApp ${data.about.personalDetails.phone}.`;
         } else {
-          fallbackText = `Halo! ${data.profile.name} adalah Fullstack Web Developer yang berpengalaman dalam membangun platform SaaS, REST API, dan bot otomatisasi. Silakan ajukan pertanyaan lain seputar proyek atau skill!`;
+          fallbackText = `Halo! ${data.profile.name} adalah Frontend Web Developer yang berpengalaman dalam membangun platform SaaS, REST API, dan bot otomatisasi. Silakan ajukan pertanyaan lain seputar proyek atau skill!`;
         }
 
         setMessages((prev) => [
@@ -184,7 +184,7 @@ ${data.projects.map((p) => `- ${p.title} (${p.category}): ${p.shortDescription} 
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-neutral-900 dark:text-white leading-tight">
-                    RyHar Assistant
+                    Yans Assistant
                   </h4>
                   <div className="flex items-center gap-1.5 mt-0.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
