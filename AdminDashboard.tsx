@@ -163,11 +163,6 @@ export const AdminDashboard: React.FC = () => {
               {pinError && <p className="text-xs text-rose-500 font-medium mt-1.5">{pinError}</p>}
             </div>
 
-            <div className="p-3 rounded-xl bg-neutral-100 dark:bg-neutral-800/60 text-[11px] text-neutral-500 dark:text-neutral-400 flex items-center justify-between">
-              <span>PIN Bawaan (Default):</span>
-              <code className="font-mono font-bold text-neutral-800 dark:text-neutral-200">admin123</code>
-            </div>
-
             <button
               type="submit"
               className="w-full py-3.5 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-white dark:bg-white dark:text-neutral-950 dark:hover:bg-neutral-200 font-bold text-xs uppercase tracking-wider cursor-pointer transition-all"
